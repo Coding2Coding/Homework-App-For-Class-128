@@ -31,7 +31,7 @@ function draw() {
 }
 
 function gotPoses(results) {
-    if(results > 0) {
+    if(results.length > 0) {
         console.log(results);
         leftWristXCoordinate = results[0].pose.leftWrist.x;
         leftWristYCoordinate = results[0].pose.leftWrist.y;
